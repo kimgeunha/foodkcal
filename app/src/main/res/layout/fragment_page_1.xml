@@ -1,0 +1,409 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DailyCal"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="일일목표칼로리량" />
+
+                <TextView
+                    android:id="@+id/DailyCalAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="하루 권장 칼로리량" />
+
+                <TextView
+                    android:id="@+id/DailyCalHas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="당일 섭취 칼로리량" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DailyNut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="하루 섭취한 영양소 양" />
+
+                <TextView
+                    android:id="@+id/HomeCarb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="탄수화물 : " />
+
+                <TextView
+                    android:id="@+id/HomeProtein"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="단백질 : " />
+
+                <TextView
+                    android:id="@+id/HomeFat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="지방 : " />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homeMorning"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/MornText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="아침"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/MornPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cereal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/MornNutrition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="81dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="영양정보"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/MornCal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="칼로리 : "
+                            android:text="칼로리 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/MornCarb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="탄수화물 : "
+                            android:text="탄수화물 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/MornProtein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="단백질 : "
+                            android:text="단백질 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/MornFat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="지방 : "
+                            android:text="지방 : "
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homeLunch"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LunchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:text="점심"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/LunchPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/salad" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LunchNutrition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="영양정보"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/LunchCal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="칼로리 : "
+                            android:text="칼로리 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/LunchCarb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="탄수화물 : "
+                            android:text="탄수화물 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/LunchProtein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="단백질 : "
+                            android:text="단백질 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/LunchFat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="지방 : "
+                            android:text="지방 : "
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homeDinner"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DinnerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:text="저녁"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/DinnerPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ramen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DinnerNutrition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="영양정보"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/DinnerCal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="칼로리 : "
+                            android:text="칼로리 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/DinnerCarb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="탄수화물 : "
+                            android:text="탄수화물 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/DinnerProtein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="단백질 : "
+                            android:text="단백질 : "
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/DinnerFat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:hint="지방 : "
+                            android:text="지방 : "
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <color name="appBackgroundColor">#0f3157</color>
+    <color name="appNavigationColor">#00597B</color>
+    <color name="appNavigationIconColor">#FFFFFF</color>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00597B</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+</resources>

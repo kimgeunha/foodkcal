@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_fastfood_24"
+        android:title="식품정보" />
+
+    <item
+        android:id="@+id/navigation_2"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="식단 달력" />
+
+    <item
+        android:id="@+id/navigation_3"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:title="게시판" />
+
+    <item
+        android:id="@+id/navigation_4"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:title="내 상태" />
+
+    <item
+        android:id="@+id/navigation_5"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_camera_alt_24"
+        android:title="카메라" />
+
+
+</menu>

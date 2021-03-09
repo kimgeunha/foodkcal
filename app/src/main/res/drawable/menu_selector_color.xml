@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    //버튼 눌렀을 때 색상
+    <item android:color="#0f3157" android:state_checked="false"/>
+    //버튼 그냥 있을 때 색상
+    <item android:color="#FFFFFF" android:state_checked="true"/>
+</selector>
